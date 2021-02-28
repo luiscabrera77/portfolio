@@ -9,6 +9,7 @@
   --primary-color: #ffffff;
   --secondary-color: #049df0;
   --tertiary-color: #303333;
+  --highlight-color: yellow;
 }
 
 body {
@@ -24,7 +25,7 @@ section {
   display: flex;
 }
 
-/* apply styles to header and navigation*/
+/* header and navigation styles*/
 header {
   padding: 20px 35px;
   background-color: var(--tertiary-color);
@@ -122,6 +123,10 @@ header nav ul li a:hover {
 
 .project-container {
 	overflow: hidden;
+}
+
+.project-featured .highlight{
+  color: var(--highlight-color);
 }
 
 .project-featured {
@@ -267,19 +272,6 @@ header nav ul li a:hover {
     font-size: 20px;
   }
 
-  footer h2, footer div {
-    text-align: center;
-    width: 100%;
-  }
-
-  .hero-cta, .hero-form {
-    width: 100%;
-  }
-  
-  .hero-cta {
-    text-align: center;
-  }
-
   .section-title {
     width: 80%;
   }
@@ -288,9 +280,6 @@ header nav ul li a:hover {
     flex: 0 50%;
   }
   
-  .contact-info iframe{
-    flex: 1 100%;
-  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -298,6 +287,10 @@ header nav ul li a:hover {
 
   section {
     padding: 30px 15px;
+  }
+
+  .contact-methods ul {
+    font-size: 16px;
   }
 
 }
@@ -319,10 +312,6 @@ header nav ul li a:hover {
     max-width: 150px;
   }
 
-  .hero-form button {
-    width: 100%;
-  }
-
   .intro p {
     width: 80%;
     font-size: 14px;
@@ -340,44 +329,27 @@ header nav ul li a:hover {
   .project {
     flex: 0 50%;
     justify-content: space-between;
+
   }
 
-.project-description p {
+  .project-description p {
     font-size: 14px;
   }
 
-.project-description h3 {
+  .project-description h3 {
     font-size: 16px;
     font-weight: bold;
   }
   
-.project-description h4 {
+  .project-description h4 {
     font-weight: lighter;
     font-size: 16px;
     margin-bottom: 15px;
   }
 
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }  
-
-  .contact-form {
-    order: 3;
-  }
-
-  .contact-form h3 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  footer h2 {
-    color: var(--secondary-color);
-    font-size: 20px;
-    margin: 0;
+  .contact-methods ul {
+    font-size: 16px;
+    flex: 0 50%;
   }
 
 }
