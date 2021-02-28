@@ -1,4 +1,4 @@
-# Professional Prtfolio
+# Professional Portfolio
 My personal software development portfolio. This page showcases my progress throught the bootcamp. 
 
 Update Feb 28: Page uses advanced CSS styling, Flexbox and Media Queries to adapt its layout to any screen size. 
