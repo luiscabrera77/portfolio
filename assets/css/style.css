@@ -1,4 +1,4 @@
-/* global Styles */
+/* general styles */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +14,14 @@
 body {
   color: var(--tertiary-color);
   font-family: Helvetica, Arial, sans-serif;
+}
+
+section {
+  padding: 40px;
+}
+
+.flex-row {
+  display: flex;
 }
 
 /* apply styles to header and navigation*/
@@ -73,7 +81,7 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
-/* Hero Style */
+/* hero style */
 .hero {
   background-image: url('../images/animated-bg.gif');
   background-size: cover;
@@ -90,9 +98,15 @@ header nav ul li a:hover {
   border-radius: 50%;
 }
 
-/* content styling */
-section {
-  padding: 60px;
+/* intro styling */
+
+.section-title {
+  font-size: 48px;
+  color: var(--secondary-color);
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
 .intro p {
@@ -104,32 +118,7 @@ section {
   text-align: center;
 }
 
-.section-title {
-  font-size: 48px;
-  color: var(--secondary-color);
-  padding-bottom: 10px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
-
-.primary-border {
-  border-color: var(--tertiary-color);
-}
-
-.secondary-border {
-  border-color: var(--tertiary-color);
-}
-
-/* content styling */
-
-.projects {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+/* projects styling */
 
 .project-container {
 	overflow: hidden;
@@ -164,7 +153,6 @@ section {
   flex: 1;
 }
 
-
 .project img {
   max-width: 100%;
   transition: all 0.2s;
@@ -180,50 +168,38 @@ section {
   transform: scale(1.1);
 }
 
-.project-bio {
+.project-description {
   padding: 25px;
   line-height: 1.3;
 }
 
-.project-bio h3 {
+.project-description h3 {
   font-size: 28px;
 }
 
-.project-bio h4 {
+.project-description h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
 }
 
-.project-bio p {
+.project-description p {
   font-size: 16px;
 }
 
-.project-bio a {
+.project-description a {
   color: var(--primary-color);
   text-decoration: none;
 }
 
-.project-bio:hover a {
+.project-description:hover a {
   text-decoration: underline;
   color: var(--primary-color);
 }
 
-.project-bio:visited a {
+.project-description:visited a {
   text-decoration: none;
   color: inherit;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.flex-row {
-  display: flex;
 }
 
 /* Contact Styles */
@@ -235,125 +211,38 @@ section {
   color: var(--primary-color);
 }
 
-.contact-methods a {
-  text-decoration: none;
-  color: var(--primary-color);
+.contact-methods {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact-methods i {
+  color:rgba(0, 0, 0, 0.5);
 }
 
 .contact-methods ul {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: left;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
-  margin: 25;
+  margin: 25px;
   color: var(--primary-color);
   font-size: 20px;
 }
 
 .contact-methods ul li a {
-  padding: 15px;
-  font-weight: lighter;
-  font-size: 24px;
-  inline-size: 10px;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0 25px 0 5px;
 }
 
 .contact-methods ul li a:hover {
   text-decoration: underline;
 }
 
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
-}
-
-.contact-info h3 {
-  color: var(--primary-color);
-  font-size: 32px;
-}
-
-.contact-info p,
-.contact-info address {
-  margin: 20px 0;
-  line-height: 1.5;
-  font-size: 16px;
-  font-style: normal;
-}
-
-.contact-info a {
-  color: var(--primary-color);
-}
-
-.contact-form input, .contact-form textarea {
-  border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  background-color: rgba(255,255,255, 0.8);
-  outline: none;  
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-background-color: rgba(255,255,255, 1);
-outline: none;
-}
-
-.contact-form textarea {
-  height: 150px;  
-}
-
-.contact-form button {
-  width: 100%;
-  border: none;
-  border-radius: 10px;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-}
-
-.contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
-}
-
-/* apply styles to footer*/
-
-footer {
-  background: var(--primary-color);
-  width: 100%;
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer h2 {
-  color: var(--secondary-color);
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: var(--secondary-color);
-}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -453,16 +342,16 @@ footer a {
     justify-content: space-between;
   }
 
-  .project-bio p {
+.project-description p {
     font-size: 14px;
   }
 
-  .project-bio h3 {
+.project-description h3 {
     font-size: 16px;
     font-weight: bold;
   }
   
-  .project-bio h4 {
+.project-description h4 {
     font-weight: lighter;
     font-size: 16px;
     margin-bottom: 15px;
