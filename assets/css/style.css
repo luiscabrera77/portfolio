@@ -110,6 +110,24 @@ header nav ul li a:hover {
   width: 50%;
 }
 
+.section-title a {
+  font-size: 48px;
+  color: var(--secondary-color);
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.section-title a:hover {
+  font-size: 48px;
+  color: var(--tertiary-color);
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
 .intro p {
   line-height: 1.7;
   color: var(--tertiary-color);
